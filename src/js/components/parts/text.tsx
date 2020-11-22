@@ -1,12 +1,11 @@
 import * as React from "react";
 import {TextBox,NumberBox} from "./types";
 
-export const StdTextArea = ({name,func,addClass,arg,value}:TextBox<string>) =>(
+export const StdTextArea = React.memo(({name,func,addClass,arg,value}:TextBox<string>) =>(
     <label className={"textArea-std "+addClass}>
-        <span className="textArea-std__name">{name}</span>
-        <textarea className="textArea-std__input" value={value} onChange={(e)=>func(e,arg)} rows={4} cols={40}></textarea>
+        <textarea className="textArea-std__input" value={value} name={name} onChange={(e)=>func(e,arg)} rows={5} cols={20}></textarea>
     </label>
-);
+));
 
 export const StdNumberBox = ({name,func,addClass,arg,value,max,min,step,disabled=false}:NumberBox)=>(
     <label className={"number-std "+addClass}>

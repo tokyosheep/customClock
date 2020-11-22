@@ -1,0 +1,8 @@
+.settingOptions{
+    .settingOptions__position{
+        @include flex-std();
+    }
+    .clockPositions__colors{
+        @include flex-std();
+    }
+}

@@ -13,6 +13,24 @@ export type ClockType = {
     }
 }
 
+export type RGB = {
+    R:number,
+    G:number,
+    B:number
+}
+
+export type Place = {
+    top:{
+        checked:boolean
+    }
+    middle:{
+        checked:boolean
+    },
+    bottom:{
+        checked:boolean
+    }
+}
+
 export type ClockText = {
     place:{
         top:{
@@ -25,9 +43,7 @@ export type ClockText = {
             checked:boolean
         }
     },
-    fontColor:{
-        R:number,
-        G:number,
-        B:number
-    }
+    fontColor:RGB
 }
+
+export type Mode = "clock"|"setting";

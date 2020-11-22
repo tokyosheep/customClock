@@ -1,9 +1,11 @@
-import {timePropsReducer,clockTypeReducer,clockTextReducer} from "../reducer/index";
+import {timePropsReducer,clockTypeReducer,clockTextReducer,timeTick,modeReducer} from "../reducer/index";
 import {combineReducers,createStore} from "redux";
 const rootReducer = combineReducers({
     timePropsReducer,
     clockTypeReducer,
-    clockTextReducer
+    clockTextReducer,
+    modeReducer,
+    timeTick
 });
 
 const configStore = () => createStore(rootReducer);

@@ -1,1 +1,137 @@
+.clockHeader .clockHeader__titles {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
 
+.clockHeader .head-large {
+  color: #000000;
+  font-weight: 300; }
+
+.clockHeader .clockHead__clock {
+  color: #000;
+  font-family: DSEG7-Classic;
+  font-size: 20px; }
+
+.clockHeader .clockHeader__type {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.settingOptions .settingOptions__position {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.settingOptions .clockPositions__colors {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.hoursSettings {
+  width: 100%;
+  height: 100%; }
+  .hoursSettings .hoursSettings__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(#74f070, #c7e2ff); }
+    .hoursSettings .hoursSettings__list > li {
+      width: 48%;
+      height: auto;
+      padding: 10px;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      margin: 5px; }
+
+@media (max-width: 900px) {
+  .HourCompo {
+    width: 100%; } }
+
+.HourCompo .HourCompo__main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.HourCompo .imageBox {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #000; }
+  .HourCompo .imageBox > img {
+    width: 100%;
+    height: 100%; }
+
+.clockMain {
+  position: absolute;
+  z-index: 5; }
+
+.arrowButton {
+  display: block;
+  top: 3%;
+  left: 90%;
+  position: fixed;
+  cursor: pointer;
+  z-index: 15; }
+
+.textArea-std .textArea-std__input {
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #4aff02; }
+
+@font-face {
+  font-family: 'DSEG7-Classic';
+  src: url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.woff2") format("woff2"), url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.woff") format("woff"), url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: #fff;
+  color: #000000;
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.degitalTimer {
+  font-family: DSEG7-Classic; }
+
+.containerSetting {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 150px 1fr 50px;
+  grid-template-rows: 200px 150px 1fr 50px;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+      grid-template-areas: "clockHeader" "settingOptions" "hoursSettings" "footer";
+  z-index: 1; }
+
+.clockHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: clockHeader; }
+
+.settingOptions {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: settingOptions; }
+
+.hoursSettings {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: hoursSettings; }
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer; }
+
+.containerClock {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1; }
+
+
+/*# sourceMappingURL=styleMin.css.map*/

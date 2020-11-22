@@ -1,0 +1,14 @@
+$screenLp: 1700px;
+$screenTb: 1200px;
+$screenMb: 900px;
+$bp-list:(
+    Sb: screen and (max-width: #{$screenMb}),
+    Mb: screen and (max-width: #{$screenTb}),
+    Lp: screen and (max-width: #{$screenLp})
+);
+
+@mixin screenMap($key){
+    @media #{map-get($bp-list,$key)}{
+        @content;
+    }
+}

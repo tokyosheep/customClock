@@ -1,0 +1,21 @@
+.clockHeader{
+    .clockHeader__titles{
+        @include flex-std();
+    }
+    .head-large{
+        color: #000000;
+        font-weight: 300;
+    }
+    
+    .clockHead__clock{
+        color: #000;
+        font-family: DSEG7-Classic;
+        font-size: 20px;
+    }
+    
+    .clockHeader__type{
+        @include flex-std();
+    }
+}
+
+
