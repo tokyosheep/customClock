@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useState,useCallback} from "react";
+import {useCallback} from "react";
 import {useSelector,useDispatch} from "react-redux";
 import {StateProps} from "../../redux/reducer/index";
 import {ClockText} from "../../redux/reducer/type";
@@ -7,6 +7,7 @@ import {ClockText} from "../../redux/reducer/type";
 import {setClockFonts,setClockColor} from "../../redux/actions/mapDispatchToPtops";
 import {StdRadioButton} from "../parts/radio";
 import {StdNumberBox} from "../parts/text";
+import Complimention from "./complimention";
 
 const ClockOptions = () =>{
     const clockOption:ClockText = useSelector((state:StateProps)=>state.clockTextReducer);
@@ -17,7 +18,7 @@ const ClockOptions = () =>{
         return <li key={key}><StdRadioButton name={key} checked={value.checked} func={handleRadioButton} arg={{prop:key}}/></li>
     });
     const clockColors = Object.entries(clockOption.fontColor).map(([key,value])=>{
-        return <li key={key}><StdNumberBox name={key} value={value} func={handleNumberButton} arg={{prop:key}} max={255} min={0} step={1}/></li>
+        return <li key={key}><StdNumberBox name={key} value={value} addClass={key} func={handleNumberButton} arg={{prop:key}} max={255} min={0} step={1}/></li>
     });
     return(
         <aside className="settingOptions">
@@ -27,6 +28,7 @@ const ClockOptions = () =>{
             <ul className="clockPositions__colors">
                 {clockColors}
             </ul>
+            <Complimention/>
         </aside>
     )
 }

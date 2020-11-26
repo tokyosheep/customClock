@@ -1,0 +1,23 @@
+.complimention{
+    $beginColor:rgb(244, 9, 252);
+    $endColor:rgb(255, 153, 0);
+    width: 500px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: linear-gradient(45deg , darken($beginColor,30%),darken($endColor,30%));
+    .complimention__graph{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: linear-gradient(45deg , $beginColor,$endColor);
+        transition: .3s linear ;
+        border-radius: 5px;
+    }
+    .complimention__percent{
+        font-size: 12px;
+        font-weight: 200;
+    }
+}

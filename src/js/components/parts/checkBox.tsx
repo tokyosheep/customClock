@@ -15,6 +15,6 @@ export const NoticeCheckBox = React.memo(({addClass,name,func,arg,checked}:Check
         <input type="checkbox" className="checkbox-Notice__input" checked={checked} onChange={(e)=>func(e,arg)} />
         <div className="checkbox-Notice__cover"></div>
         <div className="checkbox-Notice__display"></div>
-        <span className="checkbox-Notice__name">{name}</span>
+        <div className="checkbox-Notice__switch">{checked === true ? "ON" : "OFF"}</div>
     </label>
 ));

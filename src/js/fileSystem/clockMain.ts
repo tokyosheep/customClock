@@ -13,3 +13,5 @@ export const clockTicking:()=>TimeObj = () =>{
 }
 
 export const writeClockTime:(TimeObj:TimeObj)=>string = timeObj => `${timeObj.hour}:${timeObj.minute}:${timeObj.second}`;
+
+export const getHourIndex:(tick:TimeObj)=>number = tick => parseFloat(tick.hour) === 0 ?  23 : parseFloat(tick.hour) -1;

@@ -1,8 +1,43 @@
+@import "../../styles/globalValue";
+
+@mixin blurShadow(){
+    box-shadow: 0px 0px 3px 3px rgba(255,255,255,0.3);
+}
+
 .arrowButton{
+    $borderSize:5px;
+    $arrowSize:30px;
     display: block;
-    top: 3%;
+    top: 5%;
     left: 90%;
     position: fixed;
     cursor: pointer;
-    z-index: 15;
+    z-index: map-get($layer,arrow);
+    width: 30px;
+    height: 30px;
+    transform:rotate(-135deg) scale(1);
+    transition: .3s linear;
+    &:hover{
+        transform:rotate(-135deg) scale(1.3);
+    }
+    &:after{
+        content:"";
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: $borderSize;
+        background: #000;
+        @include blurShadow();
+    }
+    &:before{
+        content:"";
+        top: 0;
+        left: $arrowSize - $borderSize;
+        position: absolute;
+        width: $borderSize;
+        height: 100%;
+        background: #000;
+        @include blurShadow();
+    }
 }

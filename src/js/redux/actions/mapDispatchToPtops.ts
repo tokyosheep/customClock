@@ -1,8 +1,12 @@
 import {TimeDispatch,ClockTypeDispatch,Position,RGBProp,ClockPlaceDispatch,ClockColorDispatch,ModeFunc} from "../reducer/index";
-import {Mode} from "../reducer/type";
+import {Mode,TimeProp} from "../reducer/type";
 
 export const setTimeProps:(index:number,prop:string,value:string|boolean)=>{type:"timeProps_set"}&TimeDispatch = (index,prop,value) =>{
     return{type:"timeProps_set",index:index,prop:prop,value:value};
+}
+
+export const setTimePropAll:(array:TimeProp[])=>{type:string,array:TimeProp[]} = array=>{
+    return{type:"timeProps_loaded",array:array}
 }
 
 export const setClockType:(prop:string,value:boolean)=>ClockTypeDispatch = (prop,value)=>{

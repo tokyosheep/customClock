@@ -1,19 +1,22 @@
 import {TimeProp,ClockType,ClockText,Mode} from "./type";
 import {TimeObj,clockTicking} from "../../fileSystem/clockMain";
-
-const initProp:TimeProp = {
+import {dispatchNoticefaction} from "../../fileSystem/clockEvent";
+const initProp = {
     image:"",
     text:"",
     noticefaction:false
 }
-const setInit = () => ({...initProp});
+const setInit = num => ({...initProp,index:num});
 
 const emptyObjs = new Array(24).fill("");
-const initTimeProps:TimeProp[] = emptyObjs.map(emp=> setInit())
+export const initTimeProps:TimeProp[] = emptyObjs.map((emp,index)=> setInit(index))
 
 export type TimeDispatch = {index:number,prop:string,value:string|boolean};
 
-type TimeReducer = (state:TimeProp[],action:{type:string}&TimeDispatch)=>TimeProp[];
+type TimeReducer = {
+    (state:TimeProp[],action:{type:string}&TimeDispatch):TimeProp[];
+    (state:TimeProp[],action:{type:string,action:{array:TimeProp[]}}):TimeProp[];
+}
 
 export const timePropsReducer:TimeReducer = (state=initTimeProps,action) =>{
     console.log(action);
@@ -24,6 +27,10 @@ export const timePropsReducer:TimeReducer = (state=initTimeProps,action) =>{
             newObj[action.prop] = action.value
             stat[action.index] = newObj;
             return stat; 
+
+        case "timeProps_loaded":
+            if(action.array.length !== 24)return state;
+            return action.array.sort((a,b)=> a.index - b.index);
 
         default:
             return state;

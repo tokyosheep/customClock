@@ -14,13 +14,6 @@ const ClockHeader = () =>{
     const tick:TimeObj = useSelector((state:StateProps)=>state.timeTick);
     console.log("tick");
     console.log(tick);
-    /*
-    const [tick,setTick] = useState("");
-    setInterval(()=>{
-        const timeObj = clockTicking();
-        setTick(`${timeObj.hour}:${timeObj.minute}:${timeObj.second}`);
-    },1000);
-    */
     const handleRadioButton = useCallback((e,arg)=>dispatch(setClockType(arg.prop,e.target.checked)),[typeClock]);
     const clockRadios = Object.entries(typeClock).map(([key,value])=>{
         return <li key={key}><StdRadioButton name={key} checked={value.checked} arg={{prop:key}} func={handleRadioButton}/></li>

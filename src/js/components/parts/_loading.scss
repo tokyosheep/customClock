@@ -1,0 +1,66 @@
+@import "../../../styles/globalValue";
+
+.loading{
+    z-index: map-get($layer,loading);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    .loading__title{
+        @include onCenter($top:70%,$transY:0%);
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 20px;
+        animation: fading 1.2s linear infinite forwards;
+    }
+    .loading__circles{
+        width: 100px;
+        height: 100px;
+        @include onCenter();
+        & > li{
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: 50px 50px;
+            transform: rotate(0deg);
+            @for $i from 1 through 5{
+                &:nth-child(#{$i}){
+                    animation: rotate 1.6s #{$i/5}s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;
+                }
+            }
+            
+        }
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(340deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fading{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

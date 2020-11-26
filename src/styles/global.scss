@@ -6,9 +6,17 @@
 @import "../js/components/settingsCompo/hoursList";
 @import "../js/components/settingsCompo/hourCompo/housrCompo";
 @import "../js/components/clockCompo/clockMain";
+@import "../js/components/settingsCompo/complemention";
 
 @import "../js/pages/arrowBtn";
 @import "../js/components/parts/text";
+@import "../js/components/parts/radio";
+@import "../js/components/parts/checkBox";
+@import "../js/components/parts/button";
+@import "../js/components/parts/loading";
+@import "../js/pages/cover";
+
+@import "./globalValue";
 
 @font-face {
     font-family: 'DSEG7-Classic';
@@ -23,6 +31,13 @@ body{
     background: #fff;
     color: #000000;
     margin: 0;
+    font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+
+}
+
+.head-small{
+    font-size: 25px;
+    font-weight: 200;
 }
 
 ul{
@@ -44,19 +59,24 @@ ul{
         "hoursSettings"
         "footer"
     ;
-    z-index: 1;
+    z-index: map-get($layer,base);
 }
 
 .clockHeader{
     grid-area: clockHeader;
+    padding-left: 10px;
 }
 
 .settingOptions{
     grid-area: settingOptions;
+    padding-left: 10px;
 }
 
 .hoursSettings{
     grid-area: hoursSettings;
+    .hoursSettings__head{
+        padding-left: 10px;
+    }
 }
 
 .footer{
@@ -67,5 +87,19 @@ ul{
     width: 100vw;
     height: 100vh;
     position: relative;
-    z-index: 1;
+    z-index: map-get($layer,base);
+    &.darkMode:after{
+        content:"";
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+    }
+}
+
+.hide{
+    display: none;
 }

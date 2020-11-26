@@ -2,6 +2,7 @@ export type TimeProp = {
     image:string,
     text:string,
     noticefaction:boolean,
+    index:number
 }
 
 export type ClockType = {

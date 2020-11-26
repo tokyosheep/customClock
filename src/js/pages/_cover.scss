@@ -1,0 +1,11 @@
+@import "../../styles/globalValue";
+
+.cover{
+    width: 100vw;
+    height: 100vh;
+    top: -100%;
+    left: 0%;
+    position: fixed;
+    z-index: map-get($layer,cover);
+    background: #fff;
+}

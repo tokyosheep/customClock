@@ -5,6 +5,8 @@ import { useDrop, DropTargetMonitor,DragObjectWithType} from "react-dnd";
 import { wrapPromise } from "../../parts/suspendLoad";
 import {ClickFunc} from "./hourCompo";
 
+import { IoIosAdd } from "react-icons/io";
+
 
 
 export type TargetBox = {
@@ -28,7 +30,7 @@ const ImageElm:(props:TargetBox)=>JSX.Element = React.memo(({img,clickFunc,onDro
 
     return(
         <div className={"imageBox " + (isActive ? "dropOver" : "")} ref={drop} onClick={clickFunc} >
-            {(img === false ? <span>falls....</span> : <img src={img.src} style={{width:img.width < img.height ?  "100px" : "auto",height:img.height < img.width ?  "100px" : "auto" }}/>)}
+            {(img === false ? <div className="falseTOLoad"><IoIosAdd className="addIcon"/></div> : <img src={img.src} style={{width:img.width < img.height ?  "100px" : "auto",height:img.height < img.width ?  "100px" : "auto" }}/>)}
         </div>
     )
 })

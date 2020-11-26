@@ -1,8 +1,14 @@
 .settingOptions{
     .settingOptions__position{
         @include flex-std();
+        & > li{
+            margin-right: 10px;
+        }
     }
     .clockPositions__colors{
         @include flex-std();
+        & > li{
+            margin-right: 10px;
+        }
     }
 }

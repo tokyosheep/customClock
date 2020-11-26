@@ -10,7 +10,8 @@ let mainWindow;
 app.on("ready",()=>{
     mainWindow = new BrowserWindow({width:900,height:600,
         webPreferences:{
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
     mainWindow.loadURL(`file://${__dirname}/index.html`);

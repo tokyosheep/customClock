@@ -1,0 +1,51 @@
+.checkbox-Notice{
+    $size:25px;
+    width: 90px;
+    height: $size;
+    background: rgb(43, 92, 255);
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    .checkbox-Notice__input{
+        display: none;
+    }
+    .checkbox-Notice__cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background: rgb(20,20,20);
+        opacity: 0.7;
+        transition: opacity .3s linear;
+    }
+    .checkbox-Notice__display{
+        width: $size;
+        height: $size;
+        background: #fff;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 5;
+        transition: left .3s linear;
+    }
+
+    .checkbox-Notice__switch{
+        color: #ffffff;
+        z-index: 2;
+        @include onCenter();
+    }
+
+    .checkbox-Notice__input:checked + .checkbox-Notice__cover{
+        opacity: 0;
+    }
+
+    .checkbox-Notice__input:checked + .checkbox-Notice__cover + .checkbox-Notice__display{
+        left: 90px-$size;
+    }
+}
