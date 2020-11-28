@@ -6,5 +6,7 @@
 通知をオンにするとオンにした時間帯に通知を出すこともできます。</p>
 
 <img src="./readmeImg/setting.png">
+セッティング画面
 
 <img src="./readmeImg/clock.png">
+時計表示
