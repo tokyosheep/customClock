@@ -5,8 +5,16 @@
 <p>electronで開発した時計アプリ。一時期流行っていた○気出す時計的なアプリです。各時間に表示する画像を自分でセットしてメッセージも書き込めます。
 通知をオンにするとオンにした時間帯に通知を出すこともできます。</p>
 
-<img src="./readmeImg/setting.png">
 セッティング画面
+<img src="./readmeImg/setting.png">
 
-<img src="./readmeImg/clock.png">
 時計表示
+<img src="./readmeImg/clock.png">
+
+<h3>その他オプション</h3>
+<ul>
+  <li>
+    <h4>フォントカラー</h4>
+    <p>RGBでフォントのカラーを選べます。</p>
+  </li>
+</ul>
