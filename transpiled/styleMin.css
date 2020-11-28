@@ -1,2 +1,490 @@
-.clockHeader .head-large{color:#000000;font-weight:300}.clockHeader .clockHead__clock{color:#000;font-family:DSEG7-Classic;font-size:20px}.clockHeader .clockHeader__type{display:flex;justify-content:flex-start;flex-wrap:wrap}.clockHeader .clockHeader__type>li{margin-right:10px}.settingOptions .settingOptions__position{display:flex;justify-content:flex-start;flex-wrap:wrap}.settingOptions .settingOptions__position>li{margin-right:10px}.settingOptions .clockPositions__colors{display:flex;justify-content:flex-start;flex-wrap:wrap}.settingOptions .clockPositions__colors>li{margin-right:10px}.hoursSettings{width:100%;height:100%}.hoursSettings .hoursSettings__list{display:flex;justify-content:space-around;flex-wrap:wrap;background:linear-gradient(#74f070, #c7e2ff)}.hoursSettings .hoursSettings__list>li{width:48%;height:auto;padding:10px;box-sizing:border-box;background:rgba(255,255,255,0.8);box-shadow:2px 2px 2px 2px rgba(255,255,255,0.2);border-radius:5px;margin:5px}@media (max-width: 900px){.HourCompo{width:100%}}.HourCompo .HourCompo__main{display:flex;justify-content:flex-start;flex-wrap:wrap}.HourCompo .imageBox{width:100px;height:100px;border-radius:5px;overflow:hidden;margin-left:10px;position:relative;cursor:pointer}.HourCompo .imageBox>img{width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.HourCompo .dropOver{background:rgba(90,255,255,0.8)}.HourCompo .dropOver>img{opacity:0.5}.HourCompo .HourCompo__checkBox{margin-top:7px}.falseTOLoad{background:linear-gradient(45deg, rgba(150,150,150,0.5), rgba(150,150,150,0.1));width:100%;height:100%;position:relative}.falseTOLoad:hover{background:linear-gradient(45deg, rgba(180,180,180,0.5), rgba(180,180,180,0.1))}.addIcon{width:30px;height:30px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.noticefactionText{font-weight:200;font-size:15px}.clockMain{position:absolute;z-index:5}.clockMain__clockType1 .clockMain__clockTimeType1{text-align:center}.clockMain__clockType1 .clockMain__clockTextType1{text-align:center}.clockMain__clockType2 .clockMain__clockTimeType2{text-align:center}.clockMain__clockType2 .clockMain__clockTextType2{text-align:center}.complimention{width:500px;height:10px;border-radius:5px;position:relative;background:linear-gradient(45deg, #67016b, #663d00)}.complimention .complimention__graph{position:absolute;top:0;left:0;width:70%;height:100%;background:linear-gradient(45deg, #f409fc, #f90);transition:.3s linear;border-radius:5px}.complimention .complimention__percent{font-size:12px;font-weight:200}.arrowButton{display:block;top:5%;left:90%;position:fixed;cursor:pointer;z-index:15;width:30px;height:30px;transform:rotate(-135deg) scale(1);transition:.3s linear}.arrowButton:hover{transform:rotate(-135deg) scale(1.3)}.arrowButton:after{content:"";top:0;left:0;position:absolute;width:100%;height:5px;background:#000;box-shadow:0px 0px 3px 3px rgba(255,255,255,0.3)}.arrowButton:before{content:"";top:0;left:25px;position:absolute;width:5px;height:100%;background:#000;box-shadow:0px 0px 3px 3px rgba(255,255,255,0.3)}.textArea-std .textArea-std__input{border:none;background:rgba(255,255,255,0.3);border:1px solid #c5c5c5;border-radius:5px;box-sizing:border-box}.textArea-std .textArea-std__input:focus{outline:none;border:1px solid #344cd8}.number-std{display:block;padding:5px;border-radius:5px;font-size:13px;height:35px;box-sizing:border-box}.number-std .number-std__input{border:none;background:none;border-radius:5px;margin-left:5px;width:50px;height:20px;cursor:pointer;font-family:inherit;font-size:100%}.number-std .number-std__input:focus{outline:none}.number-std.R{border:1px solid red;background:#f99}.number-std.R .number-std__name{font-weight:200}.number-std.R .number-std__input{color:#000;border:1px solid red;background:#fcc}.number-std.G{border:1px solid lime;background:#9f9}.number-std.G .number-std__name{font-weight:200}.number-std.G .number-std__input{color:#000;border:1px solid lime;background:#cfc}.number-std.B{border:1px solid blue;background:#99f}.number-std.B .number-std__name{font-weight:200}.number-std.B .number-std__input{color:#000;border:1px solid blue;background:#ccf}.stdRadio{padding:2px;width:80px;height:25px;display:block;position:relative;background:rgba(136,136,136,0.7);border:1px solid #000;border-radius:3px;overflow:hidden;cursor:pointer;z-index:1}.stdRadio .stdRadio__input{display:none}.stdRadio .stdRadio__name{color:#000;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-weight:200;z-index:5}.stdRadio .stdRadio__box{width:100%;height:100%;background:#20ffb5;position:absolute;top:100%;left:0;transition:top .3s linear;z-index:3}.stdRadio .stdRadio__input:checked+.stdRadio__name+.stdRadio__box{top:0}.checkbox-Notice{width:90px;height:25px;background:#2b5cff;display:block;position:relative;z-index:1;border-radius:15px;overflow:hidden;cursor:pointer}.checkbox-Notice .checkbox-Notice__input{display:none}.checkbox-Notice .checkbox-Notice__cover{width:100%;height:100%;position:absolute;z-index:3;top:0;left:0;background:#141414;opacity:0.7;transition:opacity .3s linear}.checkbox-Notice .checkbox-Notice__display{width:25px;height:25px;background:#fff;border-radius:50%;top:0;left:0;position:absolute;z-index:5;transition:left .3s linear}.checkbox-Notice .checkbox-Notice__switch{color:#ffffff;z-index:2;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.checkbox-Notice .checkbox-Notice__input:checked+.checkbox-Notice__cover{opacity:0}.checkbox-Notice .checkbox-Notice__input:checked+.checkbox-Notice__cover+.checkbox-Notice__display{left:65px}.button-std{border:none;background:#4851a1;width:110px;height:25px;border-radius:5px;transition:.3s linear;color:#aaaaaa;cursor:pointer}.button-std:hover{color:#ffffff;background:#2535c4;width:140px}.loading{z-index:30;width:100vw;height:100vh;top:0;left:0;position:fixed;background:rgba(0,0,0,0.5)}.loading .loading__title{position:absolute;top:70%;left:50%;transform:translate(-50%, 0%);color:#ffffff;font-weight:200;font-size:20px;-webkit-animation:fading 1.2s linear infinite forwards;animation:fading 1.2s linear infinite forwards}.loading .loading__circles{width:100px;height:100px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.loading .loading__circles>li{width:20px;height:20px;background:#fff;border-radius:50%;position:absolute;top:0;left:0;transform-origin:50px 50px;transform:rotate(0deg)}.loading .loading__circles>li:nth-child(1){-webkit-animation:rotate 1.6s .2s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;animation:rotate 1.6s .2s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards}.loading .loading__circles>li:nth-child(2){-webkit-animation:rotate 1.6s .4s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;animation:rotate 1.6s .4s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards}.loading .loading__circles>li:nth-child(3){-webkit-animation:rotate 1.6s .6s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;animation:rotate 1.6s .6s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards}.loading .loading__circles>li:nth-child(4){-webkit-animation:rotate 1.6s .8s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;animation:rotate 1.6s .8s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards}.loading .loading__circles>li:nth-child(5){-webkit-animation:rotate 1.6s 1s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;animation:rotate 1.6s 1s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards}@-webkit-keyframes rotate{0%{transform:rotate(0deg)}60%{transform:rotate(340deg)}100%{transform:rotate(360deg)}}@keyframes rotate{0%{transform:rotate(0deg)}60%{transform:rotate(340deg)}100%{transform:rotate(360deg)}}@-webkit-keyframes fading{0%{opacity:1}50%{opacity:0.5}100%{opacity:1}}@keyframes fading{0%{opacity:1}50%{opacity:0.5}100%{opacity:1}}.cover{width:100vw;height:100vh;top:-100%;left:0%;position:fixed;z-index:40;background:#fff}@font-face{font-family:'DSEG7-Classic';src:url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.woff2") format("woff2"),url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.woff") format("woff"),url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.ttf") format("truetype");font-weight:normal;font-style:normal}body{background:#fff;color:#000000;margin:0;font-family:"Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif}.head-small{font-size:25px;font-weight:200}ul{list-style:none;padding:0}.degitalTimer{font-family:DSEG7-Classic}.containerSetting{display:-ms-grid;display:grid;-ms-grid-rows:200px 150px 1fr 50px;grid-template-rows:200px 150px 1fr 50px;-ms-grid-columns:100%;grid-template-columns:100%;grid-template-areas:"clockHeader" "settingOptions" "hoursSettings" "footer";z-index:1}.clockHeader{-ms-grid-row:1;-ms-grid-column:1;grid-area:clockHeader;padding-left:10px}.settingOptions{-ms-grid-row:2;-ms-grid-column:1;grid-area:settingOptions;padding-left:10px}.hoursSettings{-ms-grid-row:3;-ms-grid-column:1;grid-area:hoursSettings}.hoursSettings .hoursSettings__head{padding-left:10px}.footer{-ms-grid-row:4;-ms-grid-column:1;grid-area:footer}.containerClock{width:100vw;height:100vh;position:relative;z-index:1}.containerClock.darkMode:after{content:"";width:100vw;height:100vh;position:absolute;z-index:2;top:0;left:0;background:rgba(0,0,0,0.5)}.hide{display:none}
+@charset "UTF-8";
+.clockHeader .head-large {
+  color: #000000;
+  font-weight: 300; }
 
+.clockHeader .clockHead__clock {
+  color: #000;
+  font-family: DSEG7-Classic;
+  font-size: 20px; }
+
+.clockHeader .clockHeader__type {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .clockHeader .clockHeader__type > li {
+    margin-right: 10px; }
+
+.settingOptions .settingOptions__position {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .settingOptions .settingOptions__position > li {
+    margin-right: 10px; }
+
+.settingOptions .clockPositions__colors {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .settingOptions .clockPositions__colors > li {
+    margin-right: 10px; }
+
+.hoursSettings {
+  width: 100%;
+  height: 100%; }
+  .hoursSettings .hoursSettings__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(#74f070, #c7e2ff); }
+    .hoursSettings .hoursSettings__list > li {
+      width: 48%;
+      height: auto;
+      padding: 10px;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      margin: 5px; }
+
+@media (max-width: 900px) {
+  .HourCompo {
+    width: 100%; } }
+
+.HourCompo .HourCompo__main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.HourCompo .imageBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer; }
+  .HourCompo .imageBox > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.HourCompo .dropOver {
+  background: rgba(90, 255, 255, 0.8); }
+  .HourCompo .dropOver > img {
+    opacity: 0.5; }
+
+.HourCompo .HourCompo__checkBox {
+  margin-top: 7px; }
+
+.falseTOLoad {
+  background: linear-gradient(45deg, rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.1));
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .falseTOLoad:hover {
+    background: linear-gradient(45deg, rgba(180, 180, 180, 0.5), rgba(180, 180, 180, 0.1)); }
+
+.addIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.noticefactionText {
+  font-weight: 200;
+  font-size: 15px; }
+
+.clockMain {
+  position: absolute;
+  z-index: 5; }
+
+.clockMain__clockType1 .clockMain__clockTimeType1 {
+  text-align: center; }
+
+.clockMain__clockType1 .clockMain__clockTextType1 {
+  text-align: center; }
+
+.clockMain__clockType2 .clockMain__clockTimeType2 {
+  text-align: center; }
+
+.clockMain__clockType2 .clockMain__clockTextType2 {
+  text-align: center; }
+
+.complimention {
+  width: 500px;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  background: linear-gradient(45deg, #67016b, #663d00); }
+  .complimention .complimention__graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(45deg, #f409fc, #ff9900);
+    transition: .3s linear;
+    border-radius: 5px; }
+  .complimention .complimention__percent {
+    font-size: 12px;
+    font-weight: 200; }
+
+.arrowButton {
+  display: block;
+  top: 5%;
+  left: 90%;
+  position: fixed;
+  cursor: pointer;
+  z-index: 15;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-135deg) scale(1);
+  transition: .3s linear; }
+  .arrowButton:hover {
+    transform: rotate(-135deg) scale(1.3); }
+  .arrowButton:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.3); }
+  .arrowButton:before {
+    content: "";
+    top: 0;
+    left: 25px;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #000;
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.3); }
+
+.textArea-std .textArea-std__input {
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  box-sizing: border-box; }
+  .textArea-std .textArea-std__input:focus {
+    outline: none;
+    border: 1px solid #344cd8; }
+
+.number-std {
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  height: 35px;
+  box-sizing: border-box; }
+  .number-std .number-std__input {
+    border: none;
+    background: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 100%; }
+    .number-std .number-std__input:focus {
+      outline: none; }
+
+.number-std.R {
+  border: 1px solid red;
+  background: #ff9999; }
+  .number-std.R .number-std__name {
+    font-weight: 200; }
+  .number-std.R .number-std__input {
+    color: #000;
+    border: 1px solid red;
+    background: #ffcccc; }
+
+.number-std.G {
+  border: 1px solid lime;
+  background: #99ff99; }
+  .number-std.G .number-std__name {
+    font-weight: 200; }
+  .number-std.G .number-std__input {
+    color: #000;
+    border: 1px solid lime;
+    background: #ccffcc; }
+
+.number-std.B {
+  border: 1px solid blue;
+  background: #9999ff; }
+  .number-std.B .number-std__name {
+    font-weight: 200; }
+  .number-std.B .number-std__input {
+    color: #000;
+    border: 1px solid blue;
+    background: #ccccff; }
+
+.stdRadio {
+  padding: 2px;
+  width: 80px;
+  height: 25px;
+  display: block;
+  position: relative;
+  background: rgba(136, 136, 136, 0.7);
+  border: 1px solid #000;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1; }
+  .stdRadio .stdRadio__input {
+    display: none; }
+  .stdRadio .stdRadio__name {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+    z-index: 5; }
+  .stdRadio .stdRadio__box {
+    width: 100%;
+    height: 100%;
+    background: #20ffb5;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: top .3s linear;
+    z-index: 3; }
+  .stdRadio .stdRadio__input:checked + .stdRadio__name + .stdRadio__box {
+    top: 0; }
+
+.checkbox-Notice {
+  width: 90px;
+  height: 25px;
+  background: #2b5cff;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer; }
+  .checkbox-Notice .checkbox-Notice__input {
+    display: none; }
+  .checkbox-Notice .checkbox-Notice__cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background: #141414;
+    opacity: 0.7;
+    transition: opacity .3s linear; }
+  .checkbox-Notice .checkbox-Notice__display {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+    transition: left .3s linear; }
+  .checkbox-Notice .checkbox-Notice__switch {
+    color: #ffffff;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .checkbox-Notice .checkbox-Notice__input:checked + .checkbox-Notice__cover {
+    opacity: 0; }
+  .checkbox-Notice .checkbox-Notice__input:checked + .checkbox-Notice__cover + .checkbox-Notice__display {
+    left: 65px; }
+
+.button-std {
+  border: none;
+  background: #4851a1;
+  width: 110px;
+  height: 25px;
+  border-radius: 5px;
+  transition: .3s linear;
+  color: #aaaaaa;
+  cursor: pointer; }
+  .button-std:hover {
+    color: #ffffff;
+    background: #2535c4;
+    width: 140px; }
+
+.loading {
+  z-index: 30;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5); }
+  .loading .loading__title {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 20px;
+    -webkit-animation: fading 1.2s linear infinite forwards;
+            animation: fading 1.2s linear infinite forwards; }
+  .loading .loading__circles {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .loading .loading__circles > li {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 50px 50px;
+      transform: rotate(0deg); }
+      .loading .loading__circles > li:nth-child(1) {
+        -webkit-animation: rotate 1.6s 0.2s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;
+                animation: rotate 1.6s 0.2s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards; }
+      .loading .loading__circles > li:nth-child(2) {
+        -webkit-animation: rotate 1.6s 0.4s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;
+                animation: rotate 1.6s 0.4s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards; }
+      .loading .loading__circles > li:nth-child(3) {
+        -webkit-animation: rotate 1.6s 0.6s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;
+                animation: rotate 1.6s 0.6s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards; }
+      .loading .loading__circles > li:nth-child(4) {
+        -webkit-animation: rotate 1.6s 0.8s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;
+                animation: rotate 1.6s 0.8s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards; }
+      .loading .loading__circles > li:nth-child(5) {
+        -webkit-animation: rotate 1.6s 1s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards;
+                animation: rotate 1.6s 1s cubic-bezier(0, 0.23, 0.65, 0.99) infinite forwards; }
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  60% {
+    transform: rotate(340deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  60% {
+    transform: rotate(340deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes fading {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fading {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  top: -100%;
+  left: 0%;
+  position: fixed;
+  z-index: 40;
+  background: #fff; }
+
+@font-face {
+  font-family: 'DSEG7-Classic';
+  src: url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.woff2") format("woff2"), url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.woff") format("woff"), url("../node_modules/dseg/fonts/DSEG7-Classic/DSEG7Classic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: #fff;
+  color: #000000;
+  margin: 0;
+  font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif; }
+
+.head-small {
+  font-size: 25px;
+  font-weight: 200; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.degitalTimer {
+  font-family: DSEG7-Classic; }
+
+.containerSetting {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 150px 1fr 50px;
+  grid-template-rows: 200px 150px 1fr 50px;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+      grid-template-areas: "clockHeader" "settingOptions" "hoursSettings" "footer";
+  z-index: 1; }
+
+.clockHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: clockHeader;
+  padding-left: 10px; }
+
+.settingOptions {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: settingOptions;
+  padding-left: 10px; }
+
+.hoursSettings {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: hoursSettings; }
+  .hoursSettings .hoursSettings__head {
+    padding-left: 10px; }
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer; }
+
+.containerClock {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1; }
+  .containerClock.darkMode:after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
+
+.hide {
+  display: none; }
+
+
+/*# sourceMappingURL=styleMin.css.map*/

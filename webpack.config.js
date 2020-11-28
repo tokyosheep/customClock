@@ -1,5 +1,5 @@
 "use strict";
-const mode = "production";
+const mode = "development";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const enabledSourceMap = mode === "development";

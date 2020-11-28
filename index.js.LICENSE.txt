@@ -1657,3 +1657,5 @@
 //console.log(app.getPath("documents"));
 
 //filename:databasePath,
+
+//mainWindow.webContents.openDevTools();

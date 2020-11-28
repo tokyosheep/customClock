@@ -9,7 +9,7 @@ import {TimeObj,getHourIndex} from "../fileSystem/clockMain";
 
 const getBackGround:(timeProps:TimeProp[],tick:TimeObj)=>Object = (timeProps,tick) =>{
     console.log(parseFloat(tick.hour));
-    
+    console.log(timeProps);
     return{
         background:`url(${timeProps[getHourIndex(tick)].image})`,
         backgroundSize: "cover",
